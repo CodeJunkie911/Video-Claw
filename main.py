@@ -12,7 +12,7 @@ fname = re.search('<input type="hidden" name="fname" value="([\w.-]+)">', webdat
 print "Sending post request for episode " + fname 
 r = requests.post(url, data={'op': op, 'id':vid, 'fname':fname, 'usr_login':'', 'referer':'','channel':'','method_free':'Free+Download'})
 
-video_link = re.search('file: "([\w:\/\.]+\/[\w]+\.mp4)"', r.text).group(1)
+video_link = re.search('file: "([\w:\/\.]+\/[\w]+[\.mp4|\.flv]+)"', r.text).group(1)
 print video_link
 file_name = fname
 u = urllib2.urlopen(video_link)
