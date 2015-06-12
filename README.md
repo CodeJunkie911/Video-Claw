@@ -1,7 +1,7 @@
 # Video-Claw
 Grab online streaming videos
 
-Currently for gorillavid videos
+Currently for gorillavid, movpod, daclip videos
 
 ##Running format
 ###python main.py gorillqvid-url
